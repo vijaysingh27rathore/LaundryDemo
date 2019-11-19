@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfDeleteUser"
+    android:orientation="vertical"
+    android:id="@+id/linear_ConfDeleteAct"
+    android:gravity="center"
+    android:background="@drawable/text_image"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ganesh_cleaner"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_username_ConfDeleteAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center|top"
+            android:paddingLeft="30dp"
+            android:background="#80325865"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/fullname_ConfDeleteAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#80325865"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/address_ConfDeleteAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#80325865"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/contact_ConfDeleteAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#80325865"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:textSize="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_delete_user_ConfDeleteAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:text="Delete User"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/giftcards"
+            android:textStyle="bold"
+            android:longClickable="false"
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranaus_name"
+            android:layout_marginBottom="15dp"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+</LinearLayout>

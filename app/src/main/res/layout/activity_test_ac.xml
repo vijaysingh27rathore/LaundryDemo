@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestAC"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/text_image"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ganesh_cleaner"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/user_name_TestAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:height="50dp"
+            android:background="#80325865"
+            android:hint="Enter User Name"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/password_TestAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:height="50dp"
+            android:background="#80325865"
+            android:hint="Enter Password"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/ch_password_TestAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:height="50dp"
+            android:background="#80325865"
+            android:hint="Confirm Password"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/create_admin_TestAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:text="Change Password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/giftcards"
+            android:textStyle="bold"
+            android:longClickable="false"
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranaus_name"
+            android:textColor="#fff"
+            android:layout_marginBottom="15dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

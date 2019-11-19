@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMain"
+    android:orientation="vertical"
+    android:onClick="rootLayoutTapped"
+    android:background="@drawable/text_image"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ganesh_cleaner"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Details"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/customer_name_UsrMainAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#80325865"
+                    android:hint="Enter Customer Name"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:paddingLeft="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/customer_address_UsrMainAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#80325865"
+                    android:hint="Enter Customer Address"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:paddingLeft="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/customer_contact_UsrMainAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#80325865"
+                    android:hint="Enter Customer Contact"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="phone"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:paddingLeft="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/customer_quantity_UsrMainAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#80325865"
+                    android:hint="Enter Total Quantity"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/customer_package_img_UsrMainAct"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/placeholder"
+                    android:onClick="onClick"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_submit_UsrMainAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:text="Submit"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/giftcards_blue"
+                    android:textStyle="bold"
+                    android:longClickable="false"
+                    android:onClick="onClick"
+
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranaus_name"
+            android:layout_marginBottom="15dp"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+</LinearLayout>

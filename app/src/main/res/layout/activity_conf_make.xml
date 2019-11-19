@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfMake"
+    android:orientation="vertical"
+    android:id="@+id/linear_ConfMakeOrderAct"
+    android:onClick="rootLayoutTapped"
+    android:background="@drawable/text_image"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ganesh_cleaner"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name:-"
+                        android:layout_weight="3"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/customer_name_ConfMakeAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:textAlignment="gravity"
+                        android:paddingLeft="30dp"
+                        android:background="#80325865"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address:-"
+                        android:layout_weight="3"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/customer_address_ConfMakeAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:paddingLeft="30dp"
+                        android:background="#80325865"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone:-"
+                        android:layout_weight="3"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/customer_phone_ConfMakeAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:paddingLeft="30dp"
+                        android:background="#80325865"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity:-"
+                        android:layout_weight="3"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/customer_qty_ConfMakeAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:paddingLeft="30dp"
+                        android:background="#80325865"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pending Bill:-"
+                        android:layout_weight="1.5"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/customer_pending_bill_ConfMakeAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:paddingLeft="30dp"
+                        android:background="#80325865"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Current Bill:-"
+                        android:layout_weight="1.5"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/customer_current_bill_ConfMakeAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|top"
+                        android:paddingLeft="50dp"
+                        android:background="#80325865"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Received Amt:-"
+                        android:layout_weight="1.5"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/customer_received_bill_ConfMakeAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:paddingLeft="30dp"
+                        android:background="#80325865"
+                        android:hint="Enter Amount"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Bill:-"
+                        android:layout_weight="3"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/customer_total_bill_ConMakeAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:paddingLeft="30dp"
+                        android:background="#80325865"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+
+                        />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_ConfMakeAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/submit_ConfMakeAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:text="Submit"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/giftcards_blue"
+                    android:textStyle="bold"
+                    android:longClickable="false"
+                    android:onClick="onClick"
+
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranaus_name"
+            android:layout_marginBottom="15dp"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+</LinearLayout>
